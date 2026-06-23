@@ -4,7 +4,7 @@ A Python + SQL product analytics project that simulates a fintech onboarding jou
 
 This project is intentionally built as a **portfolio-ready analytics case study**: it includes synthetic data generation, event-level data, SQL queries, Python analysis, data quality checks, a simple prioritisation model, opportunity sizing, visual outputs, tests, and a Streamlit dashboard.
 
-> **Important:** all data is synthetic. No real customer, company, banking, or Revolut data is used.
+> **Important:** all data is synthetic. No real customer, company or banking data is used.
 
 ---
 
@@ -48,13 +48,7 @@ The generated dataset contains:
 - KYC guidance variant, onboarding stage flags and timestamps;
 - simple 30-day revenue and payback estimates for growth-quality analysis.
 
-Example columns:
 
-```text
-user_id, signup_date, country, device, acquisition_channel, declared_use_case,
-email_verified, kyc_completed, card_ordered, first_topup, first_transaction,
-active_30d, transaction_count_30d, estimated_revenue_30d_eur
-```
 
 ---
 
@@ -127,61 +121,7 @@ active_30d, transaction_count_30d, estimated_revenue_30d_eur
 
 ---
 
-## Repository structure
 
-```text
-fintech-onboarding-funnel-analytics/
-|
-|-- app/
-|   |-- streamlit_app.py
-|
-|-- data/
-|   |-- users.csv
-|   |-- events.csv
-|   |-- onboarding.sqlite
-|
-|-- notebooks/
-|   |-- 01_onboarding_funnel_analysis.ipynb
-|
-|-- outputs/
-|   |-- executive_summary.md
-|   |-- funnel_summary.csv
-|   |-- segment_performance.csv
-|   |-- weekly_cohort_performance.csv
-|   |-- kyc_guidance_variant_summary.csv
-|   |-- kyc_guidance_ab_test.csv
-|   |-- activation_model_summary.csv
-|   |-- opportunity_sizing.csv
-|   |-- charts/
-|
-|-- scripts/
-|   |-- generate_synthetic_data.py
-|   |-- build_database.py
-|   |-- run_analysis.py
-|   |-- run_sql_reports.py
-|
-|-- sql/
-|   |-- 01_funnel_conversion.sql
-|   |-- 02_segment_performance.sql
-|   |-- 03_weekly_cohort_analysis.sql
-|   |-- 04_kyc_guidance_variant.sql
-|   |-- 05_event_level_step_times.sql
-|
-|-- src/
-|   |-- config.py
-|   |-- funnel.py
-|
-|-- tests/
-|   |-- test_funnel_metrics.py
-|
-|-- README.md
-|-- GUIA_RAPIDA_ES.md
-|-- INTERVIEW_NOTES_ES.md
-|-- requirements.txt
-|-- Makefile
-```
-
----
 
 ## How to run
 
@@ -243,19 +183,5 @@ These queries run against `data/onboarding.sqlite` and write CSV outputs to `out
 
 ---
 
-## Methodology notes
 
-- The data is synthetic and deliberately designed to contain realistic product patterns.
-- The KYC guidance comparison is a simulated experiment, not evidence from a real product.
-- The activation model is predictive, not causal.
-- Opportunity sizing is a prioritisation tool. It estimates potential upside under simplified benchmark assumptions.
-- Revenue and payback columns are simplified estimates to demonstrate growth-quality thinking.
 
----
-
-## CV description
-
-```text
-Fintech Onboarding Funnel Analytics | Python, pandas, SQL, matplotlib, Streamlit
-Built an end-to-end product analytics project simulating a fintech onboarding journey from signup to first transaction and 30-day activation. Analysed conversion, drop-off, cohort behaviour, KYC friction, acquisition-quality differences and segment-level performance. Developed reproducible SQL queries, Python visualisations, opportunity sizing and a Streamlit dashboard to translate funnel metrics into product recommendations.
-```
