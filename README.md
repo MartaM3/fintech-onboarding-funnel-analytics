@@ -83,15 +83,15 @@ The generated dataset contains:
 
 ### 1. Funnel overview
 
-![Funnel overview](outputs/charts/01_funnel_overview.png)
+
 
 ### 2. Drop-off by stage
 
-![Drop-off by stage](outputs/charts/02_dropoff_by_stage.png)
+
 
 ### 3. Activation by acquisition channel and device
 
-![Activation by channel and device](outputs/charts/03_activation_by_channel_device.png)
+
 
 ### 4. First transaction by country
 
@@ -99,15 +99,15 @@ The generated dataset contains:
 
 ### 5. Weekly cohort performance
 
-![Weekly cohort performance](outputs/charts/05_weekly_cohort_performance.png)
+
 
 ### 6. Simulated KYC guidance variant
 
-![KYC guidance variant](outputs/charts/06_kyc_guidance_variant.png)
+
 
 ### 7. Activation model signals
 
-![Activation model signals](outputs/charts/07_activation_model_signals.png)
+
 
 ---
 
