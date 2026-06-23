@@ -95,7 +95,7 @@ The generated dataset contains:
 
 ### 4. First transaction by country
 
-![First transaction by country](outputs/charts/04_first_transaction_by_country.png)
+
 
 ### 5. Weekly cohort performance
 
